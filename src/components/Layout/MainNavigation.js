@@ -17,15 +17,18 @@ const MainNavigation =() =>{
                     <NavLink to='/Home'> Home</NavLink>
                 </li>
                
-               <li>
+                <li>
                     <NavLink to="/login"> Login</NavLink>
                 </li>
-                <li>
+                <li> 
                     <NavLink to='/product'> Product</NavLink>
                 </li>
                 <li>
                     <NavLink to='/aboutus'> About Us</NavLink>
                 </li>
+                {/* <li>
+                    <NavLink to='/user'> UserDetails</NavLink>
+                </li> */}
             </ul>
         </nav>
     </div>

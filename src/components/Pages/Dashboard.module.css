@@ -1,0 +1,13 @@
+.dash{
+    display:flex;
+    justify-content: space-between;
+    
+}
+.dash span{
+    background-color:  plum;
+    text-decoration: none;
+
+}
+.dash span button{
+    color:blue
+}

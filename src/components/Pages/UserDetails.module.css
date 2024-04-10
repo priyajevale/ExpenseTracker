@@ -1,0 +1,18 @@
+.user{
+    margin: 4rem 15rem;
+   
+    border-bottom: 1px solid black;
+}
+
+
+.user1{
+    display:flex;
+    gap:1rem;
+    justify-content:space-evenly;
+}
+.button{
+    margin-top: 1rem;
+    background-color: rgb(224, 170, 224);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}

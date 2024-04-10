@@ -108,6 +108,7 @@ import AboutUs from './components/Pages/AboutUs';
 import Product from './components/Pages/Product';
 import Login from './components/Login';
 import Dashboard from './components/Pages/Dashboard';
+import UserDetails from './components/Pages/UserDetails';
 
 function App() {
   return (
@@ -122,6 +123,7 @@ function App() {
             <Route path='/login' element={<Login />} />
             <Route path='/authform' element={<AuthForm />} />
             <Route path='dash' element={<Dashboard/>} />
+            <Route path='user' element={<UserDetails/>} />
           </Routes>
         </div>
       </Router>
