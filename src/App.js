@@ -38,8 +38,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainNavigation from "./components/Layout/MainNavigation";
 import AuthForm from './components/AuthForm';
 import Login from "./components/Login";
-// import ForgotPassword from "./components/ForgotPassword";
-
+import ForgotPassword from "./components/Pages/ForgotPasword";
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(
     !!localStorage.getItem("idToken")
@@ -58,7 +57,7 @@ function App() {
         <Routes>
           <Route path="/authform" element={<AuthForm />} />
           <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
-          {/* <Route path="/forgot-password" element={<ForgotPassword />} />  */}
+          <Route path="/forgot-password" element={<ForgotPassword />} /> 
         </Routes>
       </div>
     </Router>
