@@ -39,6 +39,7 @@ import MainNavigation from "./components/Layout/MainNavigation";
 import AuthForm from './components/AuthForm';
 import Login from "./components/Login";
 import ForgotPassword from "./components/Pages/ForgotPasword";
+import ExpenseTracker from "./components/Pages/ExpenseTracker";
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(
     !!localStorage.getItem("idToken")
@@ -53,6 +54,7 @@ function App() {
   return (
     <Router>
       <div>
+        <ExpenseTracker/>
         <MainNavigation isAuthenticated={isAuthenticated} handleLogout={handleLogout} />
         <Routes>
           <Route path="/authform" element={<AuthForm />} />
