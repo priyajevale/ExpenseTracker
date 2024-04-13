@@ -95,7 +95,7 @@ const ExpenseTracker = () => {
   const handleDeleteExpense = (id) => {
     // Send a DELETE request to remove the expense from Firebase
     fetch(
-      `https://expensetracker-674c4-default-rtdb.firebaseio.com/expenses/${id}.json`,
+      `https://expenses-c4a15-default-rtdb.firebaseio.com/expenses/${id}.json`,
       {
         method: "DELETE",
       }
