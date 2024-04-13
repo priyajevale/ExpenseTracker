@@ -92,25 +92,26 @@ const ExpenseTracker = () => {
       });
   };
 
-//   const handleDeleteExpense = (id) => {
-//     // Send a DELETE request to remove the expense from Firebase
-//     fetch(
-//       `https://expensetracker-674c4-default-rtdb.firebaseio.com/expenses/${id}.json`,
-//       {
-//         method: "DELETE",
-//       }
-//     )
-//       .then(() => {
-//         console.log("Expense successfully deleted");
+  const handleDeleteExpense = (id) => {
+    // Send a DELETE request to remove the expense from Firebase
+    fetch(
+      `https://expensetracker-674c4-default-rtdb.firebaseio.com/expenses/${id}.json`,
+      {
+        method: "DELETE",
+      }
+    )
+      .then(() => {
+        console.log("Expense successfully deleted");
 
-//         // Update the expense list by removing the deleted expense
-//         const updatedList = expensesList.filter((item) => item.id !== id);
-//         setExpensesList(updatedList);
-//       })
-//       .catch((error) => {
-//         console.error("Error deleting expense:", error);
-//       });
-//   };
+
+        // Update the expense list by removing the deleted expense
+        const updatedList = expensesList.filter((item) => item.id !== id);
+        setExpensesList(updatedList);
+      })
+      .catch((error) => {
+        console.error("Error deleting expense:", error);
+      });
+  };
 
   const handleEditClick = (item) => {
     // Populate the form with the data of the expense to be edited
@@ -214,7 +215,7 @@ const ExpenseTracker = () => {
                   variant="danger" 
                   className="ml-2"
                   style={{ marginLeft: '5px' }}
-                //   onClick={() => handleDeleteExpense(item.id)}
+                  onClick={() => handleDeleteExpense(item.id)}
                 >
                   Delete
                 </Button>
